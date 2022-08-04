@@ -61,6 +61,8 @@ alias \
         listdel="trash-list" \
         restore="trash-restore" \
         empty="trash-empty" 
+	sitedir="cd /var/www/"
+	gitdir="cd /var/git"
 #git
 alias \
        g1="git add ." \
