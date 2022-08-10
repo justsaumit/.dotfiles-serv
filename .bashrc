@@ -49,7 +49,8 @@ alias \
 	ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'\
 	sr="sudo ranger" \
 	space="ncdu" \
-	h="cat $HISTFILE|fzf|xclip -sel c" \
+	j="journalctl -xe"
+	h="cat $HISTFILE|fzf" \
 	sha="shasum -a 256" \
 	untar="tar -zxvf" \
 	untar2="tar -xvf" \
