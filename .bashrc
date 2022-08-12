@@ -43,32 +43,35 @@ export XAUTHORITY="$XDG_RUNTIME_DIR/Xauthority"
 
 # Load aliases
 alias \
-	v="vim" \
-	sv="sudo vim" \
-	r="ranger" \
+	v='vim' \
+	sv='sudo vim' \
+	r='ranger' \
 	ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'\
-	sr="sudo ranger" \
-	space="ncdu" \
-	j="journalctl -xe"
-	h="cat $HISTFILE|fzf" \
-	sha="shasum -a 256" \
-	untar="tar -zxvf" \
-	untar2="tar -xvf" \
-	cp="cp -iv" \
-	mv="mv -iv" \
-	mkd="mkdir -pv" \
-	myip="curl ipinfo.io/ip && echo """ \
-	rm="trash -v" \
-	listdel="trash-list" \
-	restore="trash-restore" \
-	empty="trash-empty" \
-	sitedir="cd /var/www" \
-	gitdir="cd /var/git"
+	sr='sudo ranger' \
+	space='ncdu' \
+	c='clear' \
+	j='journalctl -xe' \
+	ls='ls --color=auto' \
+	grep='grep --color=auto' \
+	sha='shasum -a 256' \
+	untar='tar -zxvf' \
+	untar2='tar -xvf' \
+	cp='cp -iv' \
+	mv='mv -iv' \
+	mkd='mkdir -pv' \
+	myip='curl ipinfo.io/ip && echo ""' \
+	oports='netstat -tulanp'
+	rm='trash -v' \
+	listdel='trash-list' \
+	restore='trash-restore' \
+	empty='trash-empty' \
+	sitedir='cd /var/www' \
+	gitdir='cd /var/git'
 #git
 alias \
-	g1="git add ." \
-	g2="git commit -S -m" \
-	g3="git push origin HEAD --force" \
-	gs="git status" \
-	gd="git diff --staged" \
-	glg="git log --graph --abbrev-commit --decorate --format=format:'%C(bold green)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold yellow)(%ar)%C(reset)%C(auto)%d%C(reset)%n''%C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all"
+	g1='git add .' \
+	g2='git commit -S -m' \
+	g3='git push origin HEAD --force' \
+	gs='git status' \
+	gd='git diff --staged' \
+	glg='git log --graph --abbrev-commit --decorate --format=format:'%C(bold green)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold yellow)(%ar)%C(reset)%C(auto)%d%C(reset)%n''%C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all'
