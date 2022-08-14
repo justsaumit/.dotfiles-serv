@@ -50,6 +50,7 @@ alias \
 	sr='sudo ranger' \
 	space='ncdu' \
 	c='clear' \
+	h='cat $HISTFILE|fzf' \
 	j='journalctl -xe' \
 	ls='ls --color=auto' \
 	grep='grep --color=auto' \
@@ -74,4 +75,4 @@ alias \
 	g3='git push origin HEAD --force' \
 	gs='git status' \
 	gd='git diff --staged' \
-	glg='git log --graph --abbrev-commit --decorate --format=format:'%C(bold green)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold yellow)(%ar)%C(reset)%C(auto)%d%C(reset)%n''%C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all'
+	glg="git log --graph --abbrev-commit --decorate --format=format:'%C(bold green)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold yellow)(%ar)%C(reset)%C(auto)%d%C(reset)%n''%C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all"
