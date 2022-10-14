@@ -46,12 +46,13 @@ alias \
 	v='vim' \
 	sv='sudo vim' \
 	r='ranger' \
-	ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'\
+	ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"' \
 	sr='sudo ranger' \
 	space='ncdu' \
 	c='clear' \
 	h='cat $HISTFILE|fzf' \
 	j='journalctl -xe' \
+	s='systemctl' \
 	ls='ls --color=auto' \
 	grep='grep --color=auto' \
 	sha='shasum -a 256' \
@@ -61,7 +62,7 @@ alias \
 	mv='mv -iv' \
 	mkd='mkdir -pv' \
 	myip='curl ipinfo.io/ip && echo ""' \
-	oports='netstat -tulanp'
+	oports='netstat -tulanp' \
 	rm='trash -v' \
 	listdel='trash-list' \
 	restore='trash-restore' \
