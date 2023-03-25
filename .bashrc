@@ -10,8 +10,7 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-alias ls='ls --color=auto'
-
+export TERM="xterm-256color"
 export PS1="\[$(tput bold)\]\[$(tput setaf 1)\]{\[$(tput setaf 3)\]\u\[$(tput setaf 2)\]@\[$(tput setaf 4)\]\h\[$(tput setaf 5)\] \W\[$(tput setaf 2)\]\$(git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/')\[$(tput setaf 1)\]}\[$(tput setaf 7)\]\\$ \[$(tput sgr0)\]"
 
 #auto cd 
@@ -67,7 +66,7 @@ alias \
 	listdel='trash-list' \
 	restore='trash-restore' \
 	empty='trash-empty' \
-	sitedir='cd /var/www' \
+	sitedir='cd /var/www/draco/public' \
 	gitdir='cd /var/git'
 #git
 alias \
